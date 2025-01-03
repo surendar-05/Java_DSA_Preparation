@@ -1,3 +1,4 @@
+package Recursion;
 class Solution {
     public void solve(int index,List<List<Integer>>ans_list,List<Integer>list,int [] nums){
       
@@ -9,7 +10,7 @@ class Solution {
       
       list.add(nums[index]);
 
-      solve(index+1,ans_list,list,nums);
+      solve(idex+1,ans_list,list,nums);
       
       // Backtrack: remove the current element from the subset
       list.remove(list.size()-1);
